@@ -20,7 +20,7 @@ docker build -t hadoop .
 ## Create the container
 1. To run and create a container execute the below command:
 ```shell
-docker run -it --name hadoop-cluster -p 9864:9864 -p 9870:9870 -p 8088:8088 --hostname localhost hadoop
+docker run -it --name hadoop-cluster -p 9864:9864 -p 9870:9870 -p 8088:8088 -p 4040:4040 --hostname localhost hadoop
 ```
 2. Change **container-name** (hadoop-cluster) by your favorite name and set **your-hostname** with by your ip or name machine. You can use **localhost** (localhost) as your-hostname
 
